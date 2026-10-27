@@ -12,8 +12,8 @@ from sklearn.linear_model import LinearRegression
 if __name__ == "__main__":
     df = pd.read_csv("finn-annonser-data.csv")
 
-    X = df.drop('', axis=1)
-    y = df['']
+    X = df.drop('pris', axis=1)
+    y = df['pris']
 
     print(X.head())
     print(y.head())
@@ -22,24 +22,24 @@ if __name__ == "__main__":
 
     print("antall for trening:", len(X_train), "\nantall for testing:", len(X_test))
 
-    num_cols = ['price', 'manufacturer', 'year', 'km_driven', 'fuel_type', 'gearbox', 'reach']
+    num_cols = ['merke', 'aar', 'km', 'type', 'girkasse', 'rekkevidde', 'pris', 'selger']
 
     plt.figure(figsize=(14,8))
-    sns.histplot(df.price, kde=True)
+    sns.histplot(df.pris, kde=True)
     plt.xlabel('Selling price')
     plt.ylabel('Count')
     plt.title('Distribution of selling prices')
     plt.show()
 
     plt.figure(figsize=(14,8))
-    sns.histplot(df.year, kde=True)
+    sns.histplot(df.aar, kde=True)
     plt.xlabel('Model years')
     plt.ylabel('Count')
     plt.title('Distribution of model years')
     plt.show()
 
     plt.figure(figsize=(14,8))
-    sns.histplot(data=df, x='price', hue='fuel_type', kde=True)
+    sns.histplot(data=df, x='pris', hue='type', kde=True)
     plt.xlabel('Selling price')
     plt.ylabel('Count')
     plt.title('Distribution of selling prices by fuel type')
