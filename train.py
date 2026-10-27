@@ -10,7 +10,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_s
 from sklearn.linear_model import LinearRegression
 
 if __name__ == "__main__":
-    df = pd.read_csv(".csv")
+    df = pd.read_csv("finn-annonser-data.csv")
 
     X = df.drop('', axis=1)
     y = df['']
