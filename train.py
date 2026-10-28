@@ -1,3 +1,4 @@
+import joblib
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -73,6 +74,11 @@ if __name__ == "__main__":
     print("Root mean squared error:", root_mean_squared_error(y_test, y_pred))
     print("R2 score:", r2_score(y_test, y_pred))
 
+    joblib.dump(rf_reg, "bilmodell.joblib")
+    joblib.dump(t_encoder, "merke_encoder.joblib")
+    joblib.dump(X_train.columns.tolist(), "model_columns.joblib")
+    print("'bilmodell.joblib', 'merke_encoder.joblib' og 'model_columns.joblib' er nå lagret.")
+
     fig, ax = plt.subplots(figsize=(10, 10))
     sns.regplot(
         x=y_test,
@@ -84,6 +90,7 @@ if __name__ == "__main__":
     ax.set_ylabel("Predicted Values")
     ax.set_title("Regression Plot")
     plt.show()
+
 
     # plt.figure(figsize=(14,8))
     # sns.histplot(df.pris, kde=True)
