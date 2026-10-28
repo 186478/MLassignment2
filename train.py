@@ -3,9 +3,13 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import sklearn
-from sklearn.ensemble import IsolationForest, RandomForestRegressor
+from sklearn.ensemble import (
+    GradientBoostingRegressor,
+    IsolationForest,
+    RandomForestRegressor,
+)
 from sklearn.impute import SimpleImputer
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, ElasticNet
 from sklearn.metrics import (
     mean_absolute_error,
     mean_squared_error,
@@ -47,7 +51,7 @@ if __name__ == "__main__":
 
     print("antall for trening:", len(X_train), "\nantall for testing:", len(X_test))
 
-    rf_reg = RandomForestRegressor(random_state=42)
+    rf_reg = GradientBoostingRegressor(random_state=42)
     rf_reg.fit(X_train, y_train)
 
     y_pred = rf_reg.predict(X_test)
