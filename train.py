@@ -18,8 +18,18 @@ if __name__ == "__main__":
     X = df.drop('pris', axis=1)
     y = df['pris']
 
-    print(X.head())
-    print(y.head())
+    one_hot = pd.get_dummies(df['type'], prefix='type', drop_first=True)
+    df = pd.concat([df, one_hot], axis=1)
+
+    one_hot = pd.get_dummies(df['girkasse'], prefix='girkasse', drop_first=True)
+    df = pd.concat([df, one_hot], axis=1)
+
+    one_hot = pd.get_dummies(df['selger'], prefix='selger', drop_first=True)
+    df = pd.concat([df, one_hot], axis=1)
+
+    df.drop(['type', 'girkasse', 'selger'], axis=1, inplace=True)
+
+    print(df.head())
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
@@ -48,7 +58,6 @@ if __name__ == "__main__":
     # plt.ylabel('Count')
     # plt.title('Distribution of selling prices by fuel type')
     # plt.show()
-
 
     # scaler = StandardScaler()
     # X_train_scaled = scaler.fit_transform(X_train)
