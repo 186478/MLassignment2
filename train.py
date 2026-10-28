@@ -1,15 +1,10 @@
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sns
-import sklearn
 from sklearn.ensemble import (
     GradientBoostingRegressor,
     IsolationForest,
-    RandomForestRegressor,
 )
-from sklearn.impute import SimpleImputer
-from sklearn.linear_model import LinearRegression, ElasticNet
 from sklearn.metrics import (
     mean_absolute_error,
     mean_squared_error,
@@ -17,7 +12,9 @@ from sklearn.metrics import (
     root_mean_squared_error,
 )
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import TargetEncoder
+
+SEED = 42
 
 if __name__ == "__main__":
     df = pd.read_csv("finn-annonser-data.csv")
@@ -33,13 +30,14 @@ if __name__ == "__main__":
     one_hot = pd.get_dummies(df["selger"], prefix="selger", drop_first=True)
     df = pd.concat([df, one_hot], axis=1)
 
-    df.drop(["merke", "modell", "type", "girkasse", "selger"], axis=1, inplace=True)
+    df.drop(["type", "girkasse", "selger"], axis=1, inplace=True)
 
     print(df.head())
 
     # Rens datasettet
-    iso = IsolationForest(random_state=42)
-    iso_pred = iso.fit_predict(df)
+    numeric_cols = df.select_dtypes(include=["number"])
+    iso = IsolationForest(random_state=SEED)
+    iso_pred = iso.fit_predict(numeric_cols)
 
     df_cleaned = df[iso_pred == 1]
 
@@ -47,11 +45,25 @@ if __name__ == "__main__":
     X = df_cleaned.drop("pris", axis=1)
     y = df_cleaned["pris"]
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=SEED)
 
     print("antall for trening:", len(X_train), "\nantall for testing:", len(X_test))
 
-    rf_reg = GradientBoostingRegressor(random_state=42)
+    # Target encode
+    t_encoder = TargetEncoder(smooth="auto", target_type="continuous")
+
+    X_train[["merke_encoded", "modell_encoded"]] = t_encoder.fit_transform(
+        X_train[["merke", "modell"]], y_train
+    )
+    X_test[["merke_encoded", "modell_encoded"]] = t_encoder.transform(
+        X_test[["merke", "modell"]]
+    )
+
+    X_train = X_train.drop(columns=["merke", "modell"])
+    X_test = X_test.drop(columns=["merke", "modell"])
+
+    # Tren
+    rf_reg = GradientBoostingRegressor(random_state=SEED)
     rf_reg.fit(X_train, y_train)
 
     y_pred = rf_reg.predict(X_test)
