@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import sklearn
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import (
@@ -49,6 +50,28 @@ if __name__ == "__main__":
         "pris",
         "selger",
     ]
+
+    rf_reg = RandomForestRegressor(random_state=42)
+    rf_reg.fit(X_train, y_train)
+
+    y_pred = rf_reg.predict(X_test)
+
+    print("Mean absolute error:", mean_absolute_error(y_test, y_pred))
+    print("Mean squared error:", mean_squared_error(y_test, y_pred))
+    print("Root mean squared error:", root_mean_squared_error(y_test, y_pred))
+    print("R2 score:", r2_score(y_test, y_pred))
+
+    fig, ax = plt.subplots(figsize=(10, 10))
+    sns.regplot(
+        x=y_test,
+        y=y_pred,
+        scatter_kws={"color": "blue", "s": 10},
+        line_kws={"color": "red", "linestyle": "--"},
+    )
+    ax.set_xlabel("Actual Values")
+    ax.set_ylabel("Predicted Values")
+    ax.set_title("Regression Plot")
+    plt.show()
 
     # plt.figure(figsize=(14,8))
     # sns.histplot(df.pris, kde=True)
