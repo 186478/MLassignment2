@@ -113,7 +113,6 @@ Toyota,Prius,2008,186400,hybrid,automat,,38942,privat
 BMW,530i,2017,72000,bensin,automat,,369000,forhandler
 Toyota,Yaris,2006,154000,bensin,manuell,,31942,privat
 Toyota,Yaris Cross,2023,14358,hybrid,automat,,359000,merkeforhandler
-Mitsubishi,Outlander,2018,176191,hybrid,,,139000,forhandler
 Tesla,Model 3,2019,157500,el,automat,560,183532,privat
 NSU,Prinz 3,1961,5000,bensin,manuell,,199000,forhandler
 BMW,X5,2010,243000,diesel,automat,,149900,forhandler
@@ -286,7 +285,6 @@ Skoda,Octavia,2018,94731,diesel,automat,,199000,forhandler
 Audi,RS3,2016,99000,bensin,automat,,489000,forhandler
 Volvo,XC60,2015,118000,diesel,automat,,289000,forhandler
 Volvo,XC90,2022,105000,hybrid,automat,73,599532,privat
-BMW,X5,2016,144000,hybrid,hybrid bensin,,228000,forhandler
 Mercedes-Benz,Andre,2023,48900,el,automat,527,609000,merkeforhandler
 Tesla,Model Y,2024,129000,el,automat,533,349000,forhandler
 Nissan,Primera,2003,224900,bensin,manuell,,21942,privat
@@ -349,7 +347,6 @@ Nissan,Pathfinder,2008,243000,diesel,automat,,39942,privat
 Peugeot,e-2008,2021,32812,el,automat,322,189000,merkeforhandler
 MINI,Countryman Cooper D,2010,160700,diesel,manuell,,49942,privat
 MG,IM5,2026,100,el,automat,,505800,merkeforhandler
-Nissan,Leaf,2018,106000,el,automat,,,forhandler
 Toyota,Prius+,2016,168993,hybrid,automat,,139900,merkeforhandler
 Volvo,XC60,2017,122500,diesel,automat,,310000,forhandler
 Tesla,Model Y,2021,109900,el,automat,507,279900,forhandler
@@ -387,7 +384,6 @@ MG,ZS EV,2022,68000,el,automat,440,227343,privat
 Volvo,V60,2020,109000,hybrid,automat,55,299900,privat
 BMW,X3,2010,214000,diesel,automat,,71942,privat
 Ford,Mustang Mach-E,2023,46800,el,automat,550,387505,privat
-MAN,,2007,190200,hybrid,diesel,,36296,privat
 Volvo,XC70,2010,480000,diesel,automat,,61942,privat
 Volkswagen,T-Roc,2022,88871,diesel,automat,,329000,merkeforhandler
 Volkswagen,ID.3,2021,25600,el,automat,423,249000,forhandler
@@ -677,7 +673,6 @@ Mercedes-Benz,EQC 400,2021,117131,el,automat,388,289500,forhandler
 Subaru,Forester,2010,250000,diesel,manuell,,23884,privat
 Toyota,Yaris Cross,2022,53000,hybrid,automat,,324532,privat
 Audi,A4,2012,253400,diesel,manuell,,74942,privat
-Volvo,V40,2018,114008,hybrid,diesel,,139000,forhandler
 Tesla,Model Y,2023,31590,el,automat,533,402505,privat
 Volkswagen,Passat,2009,312000,diesel,automat,,21742,privat
 Opel,Astra,2007,142307,bensin,manuell,,13942,privat
@@ -745,7 +740,6 @@ Tesla,Model S,2016,243000,el,automat,,152000,forhandler
 BMW,520d,2015,219000,diesel,automat,,149532,privat
 Volkswagen,Golf VII,2016,161500,hybrid,automat,,99000,privat
 Toyota,Yaris,2006,90700,diesel,manuell,,19942,privat
-Mercedes-Benz,Sprinter 413,2000,499989,hybrid,diesel,,150942,privat
 Audi,A3,2000,217617,bensin,manuell,,22942,privat
 Volkswagen,UP!,2017,75000,el,automat,,69000,forhandler
 Volkswagen,ID.7,2026,16800,el,automat,575,569900,privat
@@ -817,7 +811,6 @@ Volvo,XC40,2019,98700,diesel,automat,,299900,forhandler
 Audi,A1,2012,122000,bensin,automat,,119999,forhandler
 Audi,e-tron,2020,158500,el,automat,302,179000,forhandler
 Hyundai,i30,2008,112115,diesel,manuell,,36942,privat
-Triumph,,1960,27565,hybrid,bensin,,65000,privat
 Tesla,Model Y,2024,65900,el,automat,514,384900,forhandler
 Tesla,Model X,2017,203000,el,automat,,179000,privat
 Volvo,164,1973,183373,bensin,manuell,,239900,forhandler
@@ -846,8 +839,6 @@ Toyota,Yaris,2016,115000,hybrid,automat,,112236,privat
 BMW,316i,2006,363800,bensin,manuell,,6942,privat
 BMW,428i,2014,160000,bensin,automat,,334000,privat
 Tesla,Model Y,2024,84750,el,automat,533,359900,forhandler
-Volvo,V60,2019,221400,hybrid,diesel,,209900,forhandler
-Toyota,RAV4,2013,218200,hybrid,diesel,,134900,forhandler
 Volkswagen,e-Golf VII,2018,116500,el,automat,300,114532,privat
 Hyundai,Kona,2022,70937,el,automat,484,244532,privat
 Audi,A1,2012,187490,bensin,manuell,,41442,privat
@@ -870,7 +861,6 @@ Nissan,Leaf,2016,91936,el,automat,,44532,privat
 Volkswagen,e-Up!,2017,72000,el,automat,160,65000,privat
 Mercedes-Benz,C 180,2014,128700,bensin,automat,,159000,privat
 Volkswagen,Golf VI,2010,149000,diesel,automat,,62000,privat
-Audi,A3,2020,80300,hybrid,hybrid bensin,,209900,forhandler
 BMW,X5,2017,199000,diesel,automat,,364532,privat
 BMW,116i,2005,293457,bensin,manuell,,19942,privat
 Volkswagen,Golf VII,2015,236495,diesel,automat,,95000,forhandler
@@ -977,7 +967,6 @@ Volkswagen,Golf VII,2017,251802,hybrid,automat,50,56532,privat
 Renault,5 E-Tech,2025,6018,el,automat,411,359000,privat
 Toyota,Urban Cruiser,2012,142164,diesel,manuell,,59999,forhandler
 Volkswagen,Touran,2012,186500,diesel,manuell,,76942,privat
-Audi,Q3,2016,225000,hybrid,bensin,,134990,privat
 Volvo,XC60,2012,264086,diesel,automat,,121942,privat
 Volkswagen,Touran,2012,156150,diesel,manuell,,46942,privat
 Hyundai,Ioniq 5,2022,59990,el,automat,481,288900,merkeforhandler
@@ -1050,10 +1039,8 @@ Mercedes-Benz,GLC 300 e,2020,140586,hybrid,automat,44,329900,forhandler
 Toyota,RAV4,2005,137500,diesel,manuell,,32000,forhandler
 Tesla,Model Y,2023,93600,el,automat,533,339000,forhandler
 XPeng,P7,2022,48000,el,automat,530,249532,privat
-Ford,Galaxy,2014,163500,hybrid,diesel,,129000,forhandler
 Mercedes-Benz,E 220 d,2017,189000,diesel,automat,,269532,privat
 Hyundai,Ioniq 5,2025,21800,el,automat,,549000,merkeforhandler
-Mercedes-Benz,G 270,2004,273253,diesel,,,389500,forhandler
 Bentley,Continental GT,2008,144000,bensin,automat,,499000,forhandler
 Toyota,RAV4,2023,51000,hybrid,automat,75,459000,merkeforhandler
 Toyota,Yaris,2012,181000,bensin,manuell,,49000,forhandler
@@ -1191,7 +1178,6 @@ Volvo,XC60,2009,350000,diesel,automat,,41942,privat
 Volkswagen,Touran,2006,240000,diesel,manuell,,23942,privat
 Volkswagen,Golf VI,2011,131500,diesel,manuell,,31942,privat
 Audi,Q8 e-tron,2024,20723,el,automat,451,549000,merkeforhandler
-Suzuki,Swift,2016,51082,hybrid,bensin,,139900,forhandler
 Tesla,Model 3,2023,63500,el,automat,602,359900,forhandler
 Jeep,Wrangler,2009,206000,diesel,automat,,201941,privat
 BMW,i4,2022,127000,el,automat,500,395000,forhandler
@@ -1399,7 +1385,6 @@ Volvo,XC60,2016,180347,diesel,automat,,239000,merkeforhandler
 Toyota,Avensis,2007,285000,diesel,manuell,,21442,privat
 Volvo,V60,2021,160000,hybrid,automat,53,249900,forhandler
 Skoda,Kodiaq,2019,165000,diesel,automat,,319000,merkeforhandler
-Toyota,Prius+,2016,400800,hybrid,automat,,,forhandler
 BMW,X3,2019,138000,diesel,automat,,369000,forhandler
 Toyota,Corolla,1996,166100,bensin,manuell,,30000,forhandler
 Volvo,XC60,2016,95591,diesel,automat,,260000,privat
@@ -1464,7 +1449,6 @@ Kia,EV6,2022,69000,el,automat,484,339532,privat
 Cupra,Tavascan,2025,18600,el,automat,510,419000,merkeforhandler
 Toyota,bZ4X,2025,14000,el,automat,506,529900,merkeforhandler
 Volvo,V60,2019,191400,diesel,automat,,334532,forhandler
-Kia,EV4,2026,5500,el,automat,625,,forhandler
 Audi,Q5,2010,159231,diesel,automat,,109942,privat
 Suzuki,Liana,2004,137800,bensin,manuell,,13942,privat
 Peugeot,2008,2015,94000,bensin,manuell,,59900,forhandler
@@ -1545,7 +1529,6 @@ Toyota,Yaris,2020,21800,hybrid,automat,,199000,forhandler
 Volkswagen,ID.7,2025,19050,el,automat,569,567000,merkeforhandler
 Mercedes-Benz,E 220 d,2020,83800,diesel,automat,,589000,merkeforhandler
 Peugeot,308,2014,195494,bensin,automat,,46942,privat
-Kia,Niro,2017,99801,hybrid,automat,,,merkeforhandler
 Suzuki,SX4 S-Cross,2014,70900,bensin,automat,,119900,forhandler
 Toyota,bZ4X,2025,19000,el,automat,512,389000,forhandler
 Toyota,Avensis,1999,283000,bensin,automat,,20000,forhandler
@@ -1759,7 +1742,6 @@ Hyundai,Kona,2021,64100,el,automat,484,229000,forhandler
 Mercedes-Benz,GLE 350 de,2020,161089,hybrid,automat,95,559900,forhandler
 Hyundai,Ioniq 6,2023,29295,el,automat,519,365000,merkeforhandler
 Porsche,Taycan Turbo,2022,76834,el,automat,417,769900,forhandler
-Volvo,260,1961,Bensin,hybrid,,,119900,forhandler
 Audi,Q4 e-tron,2023,63675,el,automat,474,449900,merkeforhandler
 Audi,Q8 e-tron,2024,45425,el,automat,531,679000,merkeforhandler
 Opel,Astra,2023,42500,hybrid,automat,,262000,merkeforhandler
@@ -1767,7 +1749,6 @@ Audi,Q4 e-tron,2022,62500,el,automat,454,319900,forhandler
 BMW,X7,2022,63594,bensin,automat,,1299900,forhandler
 Volkswagen,Golf VIII,2021,67000,hybrid,automat,,259000,merkeforhandler
 Volkswagen,ID. Buzz,2023,42030,el,automat,416,449000,merkeforhandler
-Skoda,Enyaq,2023,56944,el,automat,530,,merkeforhandler
 Volkswagen,ID.4,2024,37551,el,automat,517,439000,merkeforhandler
 Toyota,RAV4,2013,191000,diesel,automat,,139000,merkeforhandler
 Skoda,Fabia,2015,99900,bensin,automat,,109000,forhandler
@@ -1803,10 +1784,8 @@ Tesla,Model X,2023,52200,el,automat,543,729900,forhandler
 Tesla,Model Y,2022,44883,el,automat,507,389500,merkeforhandler
 Volvo,XC40,2022,53500,hybrid,automat,44,349900,merkeforhandler
 Opel,Insignia,2021,59980,diesel,automat,,359000,merkeforhandler
-Mercedes-Benz,EQC 400,2023,43600,el,automat,401,,merkeforhandler
 Volkswagen,Tiguan,2019,156000,diesel,automat,,235000,privat
 Mercedes-Benz,C 200,2019,112491,bensin,automat,,279900,merkeforhandler
-Kia,EV9,2025,El,hybrid,,,799000,forhandler
 Audi,A4,2013,195600,bensin,manuell,,89000,forhandler
 Toyota,Auris,2012,222000,diesel,manuell,,39942,privat
 Tesla,Model Y,2025,16640,el,automat,514,456600,merkeforhandler
@@ -1929,7 +1908,6 @@ Lexus,NX450h,2023,62593,hybrid,automat,74,509000,merkeforhandler
 BMW,525d,2008,423668,diesel,automat,,26942,privat
 Toyota,Yaris Cross,2023,27680,hybrid,automat,,338000,merkeforhandler
 Chevrolet,Suburban,2007,160564,bensin,automat,,226900,privat
-Renault,Captur,2021,21900,hybrid,hybrid bensin,,189000,forhandler
 Audi,e-tron,2021,94000,el,automat,399,299800,merkeforhandler
 Ford,Focus,2017,122502,bensin,manuell,,119900,merkeforhandler
 Lexus,NX450h,2023,48432,hybrid,automat,74,529000,merkeforhandler
@@ -2028,7 +2006,6 @@ Mercedes-Benz,CLA 200,2013,198000,bensin,automat,,129000,forhandler
 Nissan,Juke,2011,92500,bensin,manuell,,51942,privat
 Citroen,C3,2004,157000,bensin,manuell,,21932,privat
 Volvo,940,1994,380000,bensin,manuell,,66942,privat
-Volkswagen,Golf VII,2015,147000,hybrid,diesel,,99000,forhandler
 Skoda,Octavia,2013,210288,diesel,manuell,,31942,privat
 BMW,118i,2020,68500,bensin,automat,,269990,forhandler
 Audi,Q4 e-tron,2022,77325,el,automat,456,309800,merkeforhandler
@@ -2040,7 +2017,6 @@ Chevrolet,Alero,2000,119400,bensin,automat,,40942,privat
 Mercedes-Benz,EQC 400,2020,100100,el,automat,407,279000,merkeforhandler
 Cadillac,Seville,1998,201000,bensin,automat,,26942,privat
 Audi,Q4 e-tron,2024,28000,el,automat,502,519800,merkeforhandler
-BMW,i3,2017,98000,el,automat,255,,forhandler
 Mercedes-Benz,E 350 e,2017,103000,hybrid,automat,,319000,forhandler
 Tesla,Model X,2018,147000,el,automat,485,259000,forhandler
 Skoda,Octavia,2019,184000,diesel,automat,,139999,privat
@@ -2069,7 +2045,6 @@ BMW,iX,2026,14000,el,automat,651,899500,merkeforhandler
 BMW,X3,2013,222000,diesel,automat,,84900,forhandler
 Volkswagen,ID.7,2026,20382,el,automat,570,549800,merkeforhandler
 Audi,e-tron GT,2022,40000,el,automat,465,589000,forhandler
-Volkswagen,Caravelle,2004,501000,hybrid,diesel,,29000,privat
 Volvo,EX30,2026,15500,el,automat,427,479000,merkeforhandler
 Audi,e-tron Sportback,2022,43000,el,automat,423,429000,forhandler
 BMW,iX,2026,9000,el,automat,641,965000,merkeforhandler
@@ -2183,7 +2158,6 @@ Audi,A4,2013,161174,bensin,automat,,130942,privat
 Mitsubishi,Outlander,2013,144478,diesel,automat,,141942,privat
 Kia,EV6,2023,49700,el,automat,506,398000,merkeforhandler
 Toyota,Yaris,2012,210000,bensin,manuell,,45000,privat
-Audi,A4,2013,229000,diesel,automat,,,forhandler
 BMW,i3,2017,109927,el,automat,300,119532,privat
 Volvo,V90,2018,135000,hybrid,automat,,283532,privat
 Tesla,Model Y,2026,23400,el,automat,600,538900,forhandler
@@ -2245,14 +2219,12 @@ Toyota,Avensis,2007,123000,diesel,manuell,,44942,privat
 Volkswagen,Golf VII,2014,153770,bensin,manuell,,69000,merkeforhandler
 Mercedes-Benz,E 220 d,2015,395600,diesel,automat,,99000,privat
 Kia,Ceed,2016,131000,diesel,automat,,89532,privat
-Volkswagen,ID.5 GTX,2023,84000,el,automat,505,,merkeforhandler
 Audi,A4,2016,136000,diesel,automat,,279000,forhandler
 Audi,R8,2016,25000,bensin,automat,,1749900,forhandler
 Opel,Agila,2009,32300,bensin,manuell,,33942,privat
 Citroen,C-Zero,2011,142000,el,automat,70,13000,privat
 Mercedes-Benz,GLE 350 de,2022,76014,hybrid,automat,94,749000,merkeforhandler
 Volkswagen,Multivan,2006,272300,diesel,manuell,,165000,privat
-Polestar,2,2021,48000,el,automat,447,,merkeforhandler
 BMW,i4,2026,10140,el,automat,529,589000,merkeforhandler
 Suzuki,XL7,2002,870000,bensin,manuell,,69000,privat
 BMW,X5,2021,99100,hybrid,automat,83,739000,merkeforhandler
@@ -2377,7 +2349,6 @@ Toyota,RAV4,2021,165000,hybrid,automat,75,359532,privat
 Mercedes-Benz,EQA 300,2022,47000,el,automat,435,349000,forhandler
 Toyota,RAV4,2013,207714,diesel,manuell,,119000,merkeforhandler
 Mercedes-Benz,E 200 d,2013,193850,diesel,automat,,159845,privat
-Toyota,Yaris,2016,95858,hybrid,automat,,,forhandler
 Volvo,V60,2020,196000,diesel,automat,,279900,merkeforhandler
 Toyota,RAV4,2020,65000,hybrid,automat,,362000,merkeforhandler
 Honda,CR-V,2016,147500,diesel,manuell,,169900,merkeforhandler

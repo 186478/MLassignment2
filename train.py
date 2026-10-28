@@ -12,6 +12,9 @@ from sklearn.linear_model import LinearRegression
 if __name__ == "__main__":
     df = pd.read_csv("finn-annonser-data.csv")
 
+    df.info()
+
+
     X = df.drop('pris', axis=1)
     y = df['pris']
 
@@ -24,28 +27,29 @@ if __name__ == "__main__":
 
     num_cols = ['merke', 'aar', 'km', 'type', 'girkasse', 'rekkevidde', 'pris', 'selger']
 
-    plt.figure(figsize=(14,8))
-    sns.histplot(df.pris, kde=True)
-    plt.xlabel('Selling price')
-    plt.ylabel('Count')
-    plt.title('Distribution of selling prices')
-    plt.show()
 
-    plt.figure(figsize=(14,8))
-    sns.histplot(df.aar, kde=True)
-    plt.xlabel('Model years')
-    plt.ylabel('Count')
-    plt.title('Distribution of model years')
-    plt.show()
+    # plt.figure(figsize=(14,8))
+    # sns.histplot(df.pris, kde=True)
+    # plt.xlabel('Selling price')
+    # plt.ylabel('Count')
+    # plt.title('Distribution of selling prices')
+    # plt.show()
 
-    plt.figure(figsize=(14,8))
-    sns.histplot(data=df, x='pris', hue='type', kde=True)
-    plt.xlabel('Selling price')
-    plt.ylabel('Count')
-    plt.title('Distribution of selling prices by fuel type')
-    plt.show()
+    # plt.figure(figsize=(14,8))
+    # sns.histplot(df.aar, kde=True)
+    # plt.xlabel('Model years')
+    # plt.ylabel('Count')
+    # plt.title('Distribution of model years')
+    # plt.show()
+
+    # plt.figure(figsize=(14,8))
+    # sns.histplot(data=df, x='pris', hue='type', kde=True)
+    # plt.xlabel('Selling price')
+    # plt.ylabel('Count')
+    # plt.title('Distribution of selling prices by fuel type')
+    # plt.show()
 
 
-    scaler = StandardScaler()
-    X_train_scaled = scaler.fit_transform(X_train)
-    X_test_scaled = scaler.transform(X_test)
+    # scaler = StandardScaler()
+    # X_train_scaled = scaler.fit_transform(X_train)
+    # X_test_scaled = scaler.transform(X_test)
