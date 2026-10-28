@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import sklearn
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import IsolationForest, RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import (
@@ -33,23 +33,19 @@ if __name__ == "__main__":
 
     print(df.head())
 
-    X = df.drop("pris", axis=1)
-    y = df["pris"]
+    # Rens datasettet
+    iso = IsolationForest(random_state=42)
+    iso_pred = iso.fit_predict(df)
+
+    df_cleaned = df[iso_pred == 1]
+
+    # Splitt
+    X = df_cleaned.drop("pris", axis=1)
+    y = df_cleaned["pris"]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
     print("antall for trening:", len(X_train), "\nantall for testing:", len(X_test))
-
-    num_cols = [
-        "merke",
-        "aar",
-        "km",
-        "type",
-        "girkasse",
-        "rekkevidde",
-        "pris",
-        "selger",
-    ]
 
     rf_reg = RandomForestRegressor(random_state=42)
     rf_reg.fit(X_train, y_train)
